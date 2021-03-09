@@ -1,0 +1,186 @@
+/* shapes */
+.square {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	height: 600px;
+	background: #f3e032;
+	overflow: hidden;
+}
+
+
+
+.covid {
+	position: absolute;
+	left: 165px;
+	top: 20px;
+	width: 75px;
+	height: 75px;
+	background: url(images/corona.png);
+	background-size: 100%;
+	animation: spin 15s infinite linear;
+
+}
+
+
+.mid_circle_1 {
+	position: absolute;
+	left: 160px;
+	top: 310px;
+	width: 50px;
+  	height: 50px;
+  	background: #cb2d2d;
+  	border-radius: 50%;
+  	animation: grow_1 10s ease infinite;
+ 
+}
+
+.mid_circle_2 {
+	position: absolute;
+	left: 190px;
+	top: 305px;
+	width: 50px;
+  	height: 50px;
+  	background: #cb2d2d;
+  	border-radius: 50%;
+  	filter: drop-shadow(-.5px .5px .5px #bf2528);
+  	animation: grow_2 10s ease infinite;
+}
+
+
+/* text */
+
+.cover {
+	position: relative;
+	width: 400px;
+	height: 600px;
+}
+
+.MICHAEL {
+	font-family: alternate-gothic-no-2-d, sans-serif;
+	font-weight: 200;
+	font-style: condensed;
+	font-size: 6em;
+	position: absolute;
+	letter-spacing: 10px;
+	left: 12%;
+	bottom: 55%;
+}
+
+.LEWIS {
+	font-family: alternate-gothic-no-2-d, sans-serif;
+	font-weight: 200;
+	font-style: condensed;
+	font-size: 6em;
+	position: absolute;
+	letter-spacing: 10px;
+	left: 23%;
+	bottom: 40%;
+}
+
+.THE {
+	font-family: alternate-gothic-no-2-d, sans-serif;
+	font-weight: 200;
+	font-style: condensed;
+	font-size: 3em;
+	position: absolute;
+	letter-spacing: 5px;
+	left: 43%;
+	bottom: 19%;
+}
+
+.PREMONITION {
+	font-family: alternate-gothic-no-2-d, sans-serif;
+	font-weight: 200;
+	font-style: condensed;
+	font-size: 3em;
+	position: absolute;
+	letter-spacing: 5px;
+	left: 20%;
+	bottom: 9%;
+}
+
+.PREMONITION:hover {
+	animation: shake 5s;
+}
+
+.tagline {
+	font-family: nimbus-roman, serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 1em;
+	position: absolute;
+	letter-spacing: 1px;
+	left: 34%;
+	bottom: 6%;
+	color: #cb2d2d;
+	animation: rise 2s cubic-bezier(.28,.46,.1,.85);
+}
+
+.date {
+	font-family: nimbus-roman, serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 1.2em;
+	position: absolute;
+	letter-spacing: 1px;
+	left: 35%;
+	bottom: 40%;
+	color: #ffffff;
+	animation: date_fade 10s linear infinite;
+}
+
+
+/*keyframes*/
+
+@keyframes date_fade {
+	0%, 25%, 75%, 100% { opacity: 0; }
+	50% { opacity: 1; }
+	
+}
+
+@keyframes grow_1 {
+	0%, 100% { width: 50px; height: 50px; left: 160px; top: 310px; }
+	50% { width: 100px; height: 100px; left: 120px; top: 290px; }
+}
+
+@keyframes grow_2 {
+	0%, 100% { width: 50px; height: 50px; left: 190px; top: 305px; }
+	50% { width: 100px; height: 100px; left: 190px; top: 275px; }
+}
+
+
+@keyframes rise {
+	100% { left: 34%; bottom: 6%; }
+	0% { left: 34%; bottom: -7%; }
+	
+}
+
+@keyframes shake {
+   0%, 100% {transform: translateX(0);} 
+   10%, 30%, 50%, 70%, 90% {transform: translateX(-5px) } 
+   20%, 40%, 60%, 80% {transform: translateX(5px); } 
+} 
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
